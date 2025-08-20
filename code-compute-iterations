@@ -1,0 +1,12 @@
+n = input('n = ');
+seq = n;
+while n > 1
+    s2 = sum(dec2bin(n) == '1');
+    n = floor((n + s2)/2);
+    seq(end+1) = n;
+end
+fprintf('%d', seq(1));
+for k = 2:numel(seq)
+    fprintf(' -> %d', seq(k));
+end
+fprintf('\n');
